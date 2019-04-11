@@ -1,0 +1,76 @@
+
+ARCH?=armv7-raspb3+
+
+
+
+EXEC_PREFIX?=$(PREFIX)
+BOOTDIR?=$(EXEC_PREFIX)/boot
+INCLUDEDIR?=$(PREFIX)/include
+
+ARCHDIR=arch/$(ARCH)
+BUILDDIR?=./build
+
+CFLAGS += -gdwarf -Og --sysroot=$(SYSROOT)
+CFLAGS += -I$$SYSROOT/usr/include
+CFLAGS += -I$$SYSROOT/usr/include/kernel
+
+KCFLAGS += -fpic -ffreestanding -Wall -Wextra 
+
+ASMFLAGS += -mcpu=cortex-a7 -fpic -ffreestanding -c
+
+KCPPFLAGS += -D__is_kernel
+KCPPFLAGS += -D__log_uart
+
+KLDFLAGS += 
+
+LIBS += -nostdlib -lgcc
+
+include $(ARCHDIR)/Makefile.config
+
+KERNEL_OBJS= \
+$(BUILDDIR)/src/kernel.o \
+$(KERNEL_ARCH_OBJS)
+
+
+OBJS=\
+$(BUILDDIR)/$(ARCHDIR)/crti.o \
+$(BUILDDIR)/$(ARCHDIR)/crtbegin.o \
+$(KERNEL_OBJS) \
+$(BUILDDIR)/$(ARCHDIR)/crtend.o \
+$(BUILDDIR)/$(ARCHDIR)/crtn.o \
+
+
+LINK_LIST=\
+$(LDFLAGS) \
+$(BUILDDIR)/$(ARCHDIR)/crti.o \
+$(BUILDDIR)/$(ARCHDIR)/crtbegin.o \
+$(KERNEL_OBJS) \
+$(LIBS) \
+$(BUILDDIR)/$(ARCHDIR)/crtend.o \
+$(BUILDDIR)/$(ARCHDIR)/crtn.o \
+
+.phony: all prepare-dir
+
+
+all: prepare-dir $(BUILDDIR)/nanos.kernel
+
+$(BUILDDIR)/nanos.kernel: $(OBJS) $(ARCHDIR)/linker.ld
+	$(CC) -T $(ARCHDIR)/linker.ld  -o $(BUILDDIR)/nanos.elf $(CFLAGS) $(KCFLAGS) $(LINK_LIST)
+	$(OBJCOPY) $(BUILDDIR)/nanos.elf -O binary $(BUILDDIR)/nanos.kernel
+	
+$(BUILDDIR)/$(ARCHDIR)/crtbegin.o $(BUILDDIR)/$(ARCHDIR)/crtend.o $(BUILDDIR)/$(ARCHDIR)/crti.o $(BUILDDIR)/$(ARCHDIR)/crtn.o: 
+	OBJ=`$(CC) $(CFLAGS) $(LDFLAGS) -print-file-name=$(@F)` && cp "$$OBJ" $@
+ 
+$(BUILDDIR)/%.o: %.S
+	$(CC) -MD -c $< -o $@ $(ASMFLAGS) $(ASMCFLAGS) 
+
+$(BUILDDIR)/%.o: %.c
+	$(CC) -MD -c $< -o $@ $(CFLAGS) $(KCFLAGS) $(KCPPFLAGS) $(CPPFLAGS)
+
+prepare-dir:
+	mkdir -p $(BUILDDIR)
+	mkdir -p $(BUILDDIR)/src
+	mkdir -p $(BUILDDIR)/$(ARCHDIR)	
+
+clean:
+	rm -rf $(BUILDDIR)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="NanOs-Rasp" Database="" Version="10.0.0">
+  <Project Name="kernel" Path="kernel/kernel.project" Active="Yes"/>
+  <Project Name="toolchain" Path="toolchain.project"/>
+  <Project Name="documentation" Path="documentation/documentation.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="kernel" ConfigName="Debug"/>
+      <Project Name="toolchain" ConfigName="Debug"/>
+      <Project Name="documentation" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="kernel" ConfigName="Release"/>
+      <Project Name="toolchain" ConfigName="Debug"/>
+      <Project Name="documentation" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

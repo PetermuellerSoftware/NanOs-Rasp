@@ -1,0 +1,160 @@
+GNU Make 4.1
+Gebaut für arm-unknown-linux-gnueabihf
+Copyright (C) 1988-2014 Free Software Foundation, Inc.
+Lizenz GPLv3+: GNU GPL Version 3 oder später <http://gnu.org/licenses/gpl.html>
+Dies ist freie Software: Sie können sie nach Belieben ändern und weiter verteilen.
+Soweit es die Gesetze erlauben gibt es KEINE GARANTIE.
+„make“-Steuerdateien werden gelesen...
+„make“-Steuerdatei „Makefile“ wird gelesen...
+Aktualisiere „make“-Steuerdateien...
+ Betrachte Ziel-Datei „Makefile“.
+  Es wird nach einer impliziten Regel für „Makefile“ gesucht.
+  Keine implizite Regel für „Makefile“ gefunden.
+  Fertig mit den Voraussetzungen für die Ziel-Datei „Makefile“.
+ Es ist nicht notwendig, das Ziel „Makefile“ neu zu erzeugen.
+Aktualisieren der Ziele...
+Betrachte Ziel-Datei „all“.
+ Die Datei „all“ existiert nicht.
+ Es wird nach einer impliziten Regel für „all“ gesucht.
+ Keine implizite Regel für „all“ gefunden.
+  Betrachte Ziel-Datei „prepare-dir“.
+   Die Datei „prepare-dir“ existiert nicht.
+   Fertig mit den Voraussetzungen für die Ziel-Datei „prepare-dir“.
+  Das Target „prepare-dir“ muss neu erzeugt werden.
+mkdir -p ./build
+Nehme Kindprozess 0x159bf30 (prepare-dir) PID 13070 in die Kette auf.
+Aktiver Kindprozess 0x159bf30 (prepare-dir) PID 13070 
+Sammle erfolgreichen Kindprozess 0x159bf30 PID 13070 
+mkdir -p ./build/arch/armv7-raspb3+
+Aktiver Kindprozess 0x159bf30 (prepare-dir) PID 13071 
+Sammle erfolgreichen Kindprozess 0x159bf30 PID 13071 
+Entferne Kindprozess 0x159bf30 PID 13071 aus der Kette.
+  Die Zieldatei „prepare-dir“ wurde erfolgreich aktualisiert.
+  Betrachte Ziel-Datei „nanos.kernel“.
+   Die Datei „nanos.kernel“ existiert nicht.
+    Betrachte Ziel-Datei „build/arch/armv7-raspb3+/crti.o“.
+     Die Datei „build/arch/armv7-raspb3+/crti.o“ existiert nicht.
+     Es wird nach einer impliziten Regel für „build/arch/armv7-raspb3+/crti.o“ gesucht.
+     Keine implizite Regel für „build/arch/armv7-raspb3+/crti.o“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/arch/armv7-raspb3+/crti.o“.
+    Das Target „build/arch/armv7-raspb3+/crti.o“ muss neu erzeugt werden.
+    Die Zieldatei „build/arch/armv7-raspb3+/crti.o“ wurde erfolgreich aktualisiert.
+    Betrachte Ziel-Datei „build/arch/armv7-raspb3+/crtbegin.o“.
+     Die Datei „build/arch/armv7-raspb3+/crtbegin.o“ existiert nicht.
+     Es wird nach einer impliziten Regel für „build/arch/armv7-raspb3+/crtbegin.o“ gesucht.
+     Keine implizite Regel für „build/arch/armv7-raspb3+/crtbegin.o“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/arch/armv7-raspb3+/crtbegin.o“.
+    Das Target „build/arch/armv7-raspb3+/crtbegin.o“ muss neu erzeugt werden.
+    Die Zieldatei „build/arch/armv7-raspb3+/crtbegin.o“ wurde erfolgreich aktualisiert.
+    Betrachte Ziel-Datei „build/“.
+     Es wird nach einer impliziten Regel für „build/“ gesucht.
+     Keine implizite Regel für „build/“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/“.
+    Es ist nicht notwendig, das Ziel „build/“ neu zu erzeugen.
+    Betrachte Ziel-Datei „build/arch/armv7-raspb3+/crtend.o“.
+     Die Datei „build/arch/armv7-raspb3+/crtend.o“ existiert nicht.
+     Es wird nach einer impliziten Regel für „build/arch/armv7-raspb3+/crtend.o“ gesucht.
+     Keine implizite Regel für „build/arch/armv7-raspb3+/crtend.o“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/arch/armv7-raspb3+/crtend.o“.
+    Das Target „build/arch/armv7-raspb3+/crtend.o“ muss neu erzeugt werden.
+    Die Zieldatei „build/arch/armv7-raspb3+/crtend.o“ wurde erfolgreich aktualisiert.
+    Betrachte Ziel-Datei „build/arch/armv7-raspb3+/crtn.o“.
+     Die Datei „build/arch/armv7-raspb3+/crtn.o“ existiert nicht.
+     Es wird nach einer impliziten Regel für „build/arch/armv7-raspb3+/crtn.o“ gesucht.
+     Keine implizite Regel für „build/arch/armv7-raspb3+/crtn.o“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/arch/armv7-raspb3+/crtn.o“.
+    Das Target „build/arch/armv7-raspb3+/crtn.o“ muss neu erzeugt werden.
+    Die Zieldatei „build/arch/armv7-raspb3+/crtn.o“ wurde erfolgreich aktualisiert.
+    Betrachte Ziel-Datei „arch/armv7-raspb3+/linker.ld“.
+     Es wird nach einer impliziten Regel für „arch/armv7-raspb3+/linker.ld“ gesucht.
+     Keine implizite Regel für „arch/armv7-raspb3+/linker.ld“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „arch/armv7-raspb3+/linker.ld“.
+    Es ist nicht notwendig, das Ziel „arch/armv7-raspb3+/linker.ld“ neu zu erzeugen.
+   Fertig mit den Voraussetzungen für die Ziel-Datei „nanos.kernel“.
+  Das Target „nanos.kernel“ muss neu erzeugt werden.
+/home/pi/opt/cross/bin/arm-none-eabi-gcc -T arch/armv7-raspb3+/linker.ld  -o nanos.kernel -g -O2 -ffreestanding -Wall -Wextra  ./build/arch/armv7-raspb3+/crti.o ./build/arch/armv7-raspb3+/crtbegin.o ./build/ ./build/ ./build/arch/armv7-raspb3+/crtend.o ./build/arch/armv7-raspb3+/crtn.o 
+Nehme Kindprozess 0x159bf30 (nanos.kernel) PID 13072 in die Kette auf.
+Aktiver Kindprozess 0x159bf30 (nanos.kernel) PID 13072 
+Sammle erfolglosen Kindprozess 0x159bf30 PID 13072 
+Makefile:41: die Regel für Ziel „nanos.kernel“ scheiterte
+Entferne Kindprozess 0x159bf30 PID 13072 aus der Kette.
+GNU Make 4.1
+Gebaut für arm-unknown-linux-gnueabihf
+Copyright (C) 1988-2014 Free Software Foundation, Inc.
+Lizenz GPLv3+: GNU GPL Version 3 oder später <http://gnu.org/licenses/gpl.html>
+Dies ist freie Software: Sie können sie nach Belieben ändern und weiter verteilen.
+Soweit es die Gesetze erlauben gibt es KEINE GARANTIE.
+„make“-Steuerdateien werden gelesen...
+„make“-Steuerdatei „Makefile“ wird gelesen...
+Aktualisiere „make“-Steuerdateien...
+ Betrachte Ziel-Datei „Makefile“.
+  Es wird nach einer impliziten Regel für „Makefile“ gesucht.
+  Keine implizite Regel für „Makefile“ gefunden.
+  Fertig mit den Voraussetzungen für die Ziel-Datei „Makefile“.
+ Es ist nicht notwendig, das Ziel „Makefile“ neu zu erzeugen.
+Aktualisieren der Ziele...
+Betrachte Ziel-Datei „all“.
+ Die Datei „all“ existiert nicht.
+ Es wird nach einer impliziten Regel für „all“ gesucht.
+ Keine implizite Regel für „all“ gefunden.
+  Betrachte Ziel-Datei „prepare-dir“.
+   Die Datei „prepare-dir“ existiert nicht.
+   Fertig mit den Voraussetzungen für die Ziel-Datei „prepare-dir“.
+  Das Target „prepare-dir“ muss neu erzeugt werden.
+mkdir -p ./build
+Nehme Kindprozess 0x15a9670 (prepare-dir) PID 13862 in die Kette auf.
+Aktiver Kindprozess 0x15a9670 (prepare-dir) PID 13862 
+Sammle erfolgreichen Kindprozess 0x15a9670 PID 13862 
+mkdir -p ./build/arch/armv7-raspb3+
+Aktiver Kindprozess 0x15a9670 (prepare-dir) PID 13863 
+Sammle erfolgreichen Kindprozess 0x15a9670 PID 13863 
+Entferne Kindprozess 0x15a9670 PID 13863 aus der Kette.
+  Die Zieldatei „prepare-dir“ wurde erfolgreich aktualisiert.
+  Betrachte Ziel-Datei „nanos.kernel“.
+   Die Datei „nanos.kernel“ existiert nicht.
+    Betrachte Ziel-Datei „build/arch/armv7-raspb3+/crti.o“.
+     Die Datei „build/arch/armv7-raspb3+/crti.o“ existiert nicht.
+     Es wird nach einer impliziten Regel für „build/arch/armv7-raspb3+/crti.o“ gesucht.
+     Keine implizite Regel für „build/arch/armv7-raspb3+/crti.o“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/arch/armv7-raspb3+/crti.o“.
+    Das Target „build/arch/armv7-raspb3+/crti.o“ muss neu erzeugt werden.
+    Die Zieldatei „build/arch/armv7-raspb3+/crti.o“ wurde erfolgreich aktualisiert.
+    Betrachte Ziel-Datei „build/arch/armv7-raspb3+/crtbegin.o“.
+     Die Datei „build/arch/armv7-raspb3+/crtbegin.o“ existiert nicht.
+     Es wird nach einer impliziten Regel für „build/arch/armv7-raspb3+/crtbegin.o“ gesucht.
+     Keine implizite Regel für „build/arch/armv7-raspb3+/crtbegin.o“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/arch/armv7-raspb3+/crtbegin.o“.
+    Das Target „build/arch/armv7-raspb3+/crtbegin.o“ muss neu erzeugt werden.
+    Die Zieldatei „build/arch/armv7-raspb3+/crtbegin.o“ wurde erfolgreich aktualisiert.
+    Betrachte Ziel-Datei „build/“.
+     Es wird nach einer impliziten Regel für „build/“ gesucht.
+     Keine implizite Regel für „build/“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/“.
+    Es ist nicht notwendig, das Ziel „build/“ neu zu erzeugen.
+    Betrachte Ziel-Datei „build/arch/armv7-raspb3+/crtend.o“.
+     Die Datei „build/arch/armv7-raspb3+/crtend.o“ existiert nicht.
+     Es wird nach einer impliziten Regel für „build/arch/armv7-raspb3+/crtend.o“ gesucht.
+     Keine implizite Regel für „build/arch/armv7-raspb3+/crtend.o“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/arch/armv7-raspb3+/crtend.o“.
+    Das Target „build/arch/armv7-raspb3+/crtend.o“ muss neu erzeugt werden.
+    Die Zieldatei „build/arch/armv7-raspb3+/crtend.o“ wurde erfolgreich aktualisiert.
+    Betrachte Ziel-Datei „build/arch/armv7-raspb3+/crtn.o“.
+     Die Datei „build/arch/armv7-raspb3+/crtn.o“ existiert nicht.
+     Es wird nach einer impliziten Regel für „build/arch/armv7-raspb3+/crtn.o“ gesucht.
+     Keine implizite Regel für „build/arch/armv7-raspb3+/crtn.o“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „build/arch/armv7-raspb3+/crtn.o“.
+    Das Target „build/arch/armv7-raspb3+/crtn.o“ muss neu erzeugt werden.
+    Die Zieldatei „build/arch/armv7-raspb3+/crtn.o“ wurde erfolgreich aktualisiert.
+    Betrachte Ziel-Datei „arch/armv7-raspb3+/linker.ld“.
+     Es wird nach einer impliziten Regel für „arch/armv7-raspb3+/linker.ld“ gesucht.
+     Keine implizite Regel für „arch/armv7-raspb3+/linker.ld“ gefunden.
+     Fertig mit den Voraussetzungen für die Ziel-Datei „arch/armv7-raspb3+/linker.ld“.
+    Es ist nicht notwendig, das Ziel „arch/armv7-raspb3+/linker.ld“ neu zu erzeugen.
+   Fertig mit den Voraussetzungen für die Ziel-Datei „nanos.kernel“.
+  Das Target „nanos.kernel“ muss neu erzeugt werden.
+/home/pi/opt/cross/bin/arm-none-eabi-gcc -T arch/armv7-raspb3+/linker.ld  -o nanos.kernel -g -O2 -ffreestanding -Wall -Wextra  ./build/arch/armv7-raspb3+/crti.o ./build/arch/armv7-raspb3+/crtbegin.o ./build/ ./build/ ./build/arch/armv7-raspb3+/crtend.o ./build/arch/armv7-raspb3+/crtn.o 
+Nehme Kindprozess 0x15a9670 (nanos.kernel) PID 13864 in die Kette auf.
+Aktiver Kindprozess 0x15a9670 (nanos.kernel) PID 13864 
+Sammle erfolglosen Kindprozess 0x15a9670 PID 13864 
+Makefile:44: die Regel für Ziel „nanos.kernel“ scheiterte
+Entferne Kindprozess 0x15a9670 PID 13864 aus der Kette.

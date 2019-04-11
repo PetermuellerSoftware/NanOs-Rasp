@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="/home/pi/OsDev/NanOs-Rasp/NanOs-Rasp.workspace">
+  <int Value="5" Name="m_selectedTab"/>
+  <wxString Value="/home/pi/OsDev/NanOs-Rasp/NanOs-Rasp.workspace" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/arch/armv7-raspb3+/boot.S" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="19" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/arch/armv7-raspb3+/linker.ld" Name="FileName"/>
+      <int Value="16" Name="FirstVisibleLine"/>
+      <int Value="14" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/include/arch/armv7-raspb3+/baseIO.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/include/arch/armv7-raspb3+/gpfio.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="26" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/include/arch/armv7-raspb3+/kuart.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/arch/armv7-raspb3+/kuart.c" Name="FileName"/>
+      <int Value="3" Name="FirstVisibleLine"/>
+      <int Value="28" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+</Session>
