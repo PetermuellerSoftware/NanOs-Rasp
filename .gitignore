@@ -1,5 +1,11 @@
+# for now implement codelite project files to
+# use it on all platforms
+
 # Prerequisites
 *.d
+
+build/
+isodir/
 
 # Compiled Object files
 *.slo
@@ -30,3 +36,5 @@
 *.exe
 *.out
 *.app
+*.kernel
+

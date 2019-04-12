@@ -7,7 +7,7 @@ EXTERN "C"
 void kernel_init() {
     uart_init();
     
-    uart_sends( "Hallo Welt, hier ist die NanOs Kernel!");
+    uart_sends( "Hallo Welt, hier ist die NanOs Kernel!\n");
     
     
     // Endlose schleife, alles einkommende direkt zurück senden
