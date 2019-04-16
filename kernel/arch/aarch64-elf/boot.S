@@ -5,6 +5,8 @@
 
 
 .global _start
+.global _halt
+
 .section ".text.boot"
 _start:
     
@@ -13,9 +15,9 @@ _start:
     and x5, x5, #0x03           // reduzieren auf die bits 0 und 1
     cbz x5,master
 
-halt:
+_halt:
     wfe
-    b halt
+    b _halt
     
     // Stack einrichten: dieser wächst nach unten und wird 
     // erst dekrementiert, dann beschrieben, daher ist _start eine 
@@ -36,4 +38,4 @@ master:
     // Kernel Init ist der erste Aufruf an eine C-Funktion
 4:  bl kernel_init
 
-    b       halt
+    b       _halt

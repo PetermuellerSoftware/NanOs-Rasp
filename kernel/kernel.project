@@ -106,6 +106,8 @@
       <File Name="arch/aarch64-elf/linker.ld"/>
       <File Name="arch/aarch64-elf/gpfio.c"/>
       <File Name="arch/aarch64-elf/kuart.c"/>
+      <File Name="arch/aarch64-elf/mbox.c"/>
+      <File Name="arch/aarch64-elf/init.c"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="make">
@@ -124,9 +126,11 @@
         <File Name="include/arch/aarch64-elf/baseIO.h"/>
         <File Name="include/arch/aarch64-elf/gpfio.h"/>
         <File Name="include/arch/aarch64-elf/kuart.h"/>
+        <File Name="include/arch/aarch64-elf/mbox.h"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <File Name="include/printf.h"/>
+    <File Name="include/libk.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
     <File Name="src/kernel.c"/>
@@ -135,5 +139,8 @@
     <File Name="printf/printf.c"/>
     <File Name="printf/printf.h"/>
     <File Name="printf/putchar.c"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="libk">
+    <File Name="libk/abort.c"/>
   </VirtualDirectory>
 </CodeLite_Project>

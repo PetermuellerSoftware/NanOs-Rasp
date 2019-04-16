@@ -31,6 +31,7 @@ KERNEL_OBJS= \
 $(BUILDDIR)/src/kernel.o \
 $(BUILDDIR)/printf/printf.o \
 $(BUILDDIR)/printf/putchar.o \
+$(BUILDDIR)/libk/abort.o \
 $(KERNEL_ARCH_OBJS)
 
 
@@ -77,6 +78,7 @@ $(BUILDDIR)/%.o: %.c
 
 prepare-dir:
 	mkdir -p $(BUILDDIR)
+	mkdir -p $(BUILDDIR)/libk
 	mkdir -p $(BUILDDIR)/src
 	mkdir -p $(BUILDDIR)/printf
 	mkdir -p $(BUILDDIR)/$(ARCHDIR)
