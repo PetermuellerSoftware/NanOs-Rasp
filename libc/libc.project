@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="kernel" Version="10.0.0" InternalType="">
+<CodeLite_Project Name="libc" Version="10.0.0" InternalType="">
   <Description/>
   <Dependencies/>
   <Settings Type="Dynamic Library">
@@ -91,49 +91,4 @@
       </Completion>
     </Configuration>
   </Settings>
-  <VirtualDirectory Name="arch">
-    <File Name="arch/README"/>
-    <VirtualDirectory Name="armv7-raspb3+">
-      <File Name="arch/armv7-raspb3+/linker.ld"/>
-      <File Name="arch/armv7-raspb3+/boot.S"/>
-      <File Name="arch/armv7-raspb3+/gpfio.c"/>
-      <File Name="arch/armv7-raspb3+/Makefile.config"/>
-      <File Name="arch/armv7-raspb3+/kuart.c"/>
-    </VirtualDirectory>
-    <VirtualDirectory Name="aarch64-elf">
-      <File Name="arch/aarch64-elf/Makefile.config"/>
-      <File Name="arch/aarch64-elf/boot.S"/>
-      <File Name="arch/aarch64-elf/linker.ld"/>
-      <File Name="arch/aarch64-elf/gpfio.c"/>
-      <File Name="arch/aarch64-elf/kuart.c"/>
-    </VirtualDirectory>
-  </VirtualDirectory>
-  <VirtualDirectory Name="make">
-    <File Name="Makefile"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="include">
-    <VirtualDirectory Name="arch">
-      <VirtualDirectory Name="armv7-raspb3+">
-        <File Name="include/arch/armv7-raspb3+/baseIO.h"/>
-        <File Name="include/arch/armv7-raspb3+/auxiliaries.h"/>
-        <File Name="include/arch/armv7-raspb3+/gpfio.h"/>
-        <File Name="include/arch/armv7-raspb3+/kuart.h"/>
-      </VirtualDirectory>
-      <VirtualDirectory Name="aarch64-elf">
-        <File Name="include/arch/aarch64-elf/auxiliaries.h"/>
-        <File Name="include/arch/aarch64-elf/baseIO.h"/>
-        <File Name="include/arch/aarch64-elf/gpfio.h"/>
-        <File Name="include/arch/aarch64-elf/kuart.h"/>
-      </VirtualDirectory>
-    </VirtualDirectory>
-    <File Name="include/printf.h"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="src">
-    <File Name="src/kernel.c"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="printf">
-    <File Name="printf/printf.c"/>
-    <File Name="printf/printf.h"/>
-    <File Name="printf/putchar.c"/>
-  </VirtualDirectory>
 </CodeLite_Project>

@@ -1,5 +1,7 @@
 
 #include <arch/kuart.h>
+#include <printf.h>
+#include <stdint.h>
 
 #if __clpusplus 
 EXTERN "C" 
@@ -8,7 +10,7 @@ void kernel_init() {
     uart_init();
     
     uart_sends( "Hallo Welt, hier ist die NanOs Kernel!\n");
-    
+
     
     
     // Endlose schleife, alles einkommende direkt zurück senden

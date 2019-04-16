@@ -3,18 +3,21 @@
   <Project Name="kernel" Path="kernel/kernel.project" Active="Yes"/>
   <Project Name="toolchain" Path="toolchain.project"/>
   <Project Name="documentation" Path="documentation/documentation.project"/>
+  <Project Name="libc" Path="libc/libc.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="kernel" ConfigName="Debug"/>
       <Project Name="toolchain" ConfigName="Debug"/>
       <Project Name="documentation" ConfigName="Debug"/>
+      <Project Name="libc" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="kernel" ConfigName="Release"/>
       <Project Name="toolchain" ConfigName="Debug"/>
       <Project Name="documentation" ConfigName="Debug"/>
+      <Project Name="libc" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

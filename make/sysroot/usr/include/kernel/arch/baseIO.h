@@ -6,14 +6,14 @@
 // Diese Funktionen werden derart oft genutzt, dass sie inline
 // also ohne weiteren overhead definiert werden.
 
-inline volatile unsigned int get64 (volatile unsigned int port) 
+inline volatile uint64_t get64 (volatile int64_t port) 
 {
-    return *(volatile unsigned int *) port;
+    return *(volatile uint64_t *) port;
 }
 
-inline void put64( volatile unsigned int port, volatile unsigned int value) 
+inline void put64( volatile uint64_t port, volatile uint64_t value) 
 {
-    *(volatile unsigned int *) port = value;
+    *(volatile uint64_t *) port = value;
 }
 
 inline void delay(uint16_t cycles)  

@@ -25,10 +25,12 @@ KLDFLAGS +=
 
 LIBS += -nostdlib -lgcc
 
-include $(ARCHDIR)/Makefile.config
+-include $(ARCHDIR)/Makefile.config
 
 KERNEL_OBJS= \
 $(BUILDDIR)/src/kernel.o \
+$(BUILDDIR)/printf/printf.o \
+$(BUILDDIR)/printf/putchar.o \
 $(KERNEL_ARCH_OBJS)
 
 
@@ -76,7 +78,8 @@ $(BUILDDIR)/%.o: %.c
 prepare-dir:
 	mkdir -p $(BUILDDIR)
 	mkdir -p $(BUILDDIR)/src
-	mkdir -p $(BUILDDIR)/$(ARCHDIR)	
+	mkdir -p $(BUILDDIR)/printf
+	mkdir -p $(BUILDDIR)/$(ARCHDIR)
 
 clean:
 	rm -rf $(BUILDDIR)
