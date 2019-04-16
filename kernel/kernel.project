@@ -108,6 +108,7 @@
       <File Name="arch/aarch64-elf/kuart.c"/>
       <File Name="arch/aarch64-elf/mbox.c"/>
       <File Name="arch/aarch64-elf/init.c"/>
+      <File Name="arch/aarch64-elf/delay.c"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="make">
@@ -127,6 +128,7 @@
         <File Name="include/arch/aarch64-elf/gpfio.h"/>
         <File Name="include/arch/aarch64-elf/kuart.h"/>
         <File Name="include/arch/aarch64-elf/mbox.h"/>
+        <File Name="include/arch/aarch64-elf/delay.h"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <File Name="include/printf.h"/>

@@ -20,6 +20,7 @@ CFLAGS += -I$$SYSROOT/usr/include/kernel
 
 KCPPFLAGS += -D__is_kernel
 KCPPFLAGS += -D__log_uart
+KCPPFLAGS += -D__qemu
 
 KLDFLAGS += 
 
