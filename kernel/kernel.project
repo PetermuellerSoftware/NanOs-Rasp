@@ -100,6 +100,13 @@
       <File Name="arch/armv7-raspb3+/Makefile.config"/>
       <File Name="arch/armv7-raspb3+/kuart.c"/>
     </VirtualDirectory>
+    <VirtualDirectory Name="aarch64-elf">
+      <File Name="arch/aarch64-elf/Makefile.config"/>
+      <File Name="arch/aarch64-elf/boot.S"/>
+      <File Name="arch/aarch64-elf/linker.ld"/>
+      <File Name="arch/aarch64-elf/gpfio.c"/>
+      <File Name="arch/aarch64-elf/kuart.c"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="make">
     <File Name="Makefile"/>
@@ -111,6 +118,12 @@
         <File Name="include/arch/armv7-raspb3+/auxiliaries.h"/>
         <File Name="include/arch/armv7-raspb3+/gpfio.h"/>
         <File Name="include/arch/armv7-raspb3+/kuart.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="aarch64-elf">
+        <File Name="include/arch/aarch64-elf/auxiliaries.h"/>
+        <File Name="include/arch/aarch64-elf/baseIO.h"/>
+        <File Name="include/arch/aarch64-elf/gpfio.h"/>
+        <File Name="include/arch/aarch64-elf/kuart.h"/>
       </VirtualDirectory>
     </VirtualDirectory>
   </VirtualDirectory>

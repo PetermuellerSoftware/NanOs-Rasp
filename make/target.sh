@@ -1,0 +1,1 @@
+echo "aarch64-elf"

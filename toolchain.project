@@ -58,34 +58,15 @@
   <VirtualDirectory Name="git">
     <File Name=".gitignore"/>
   </VirtualDirectory>
-  <VirtualDirectory Name="build">
-    <File Name="build/iso.sh"/>
-    <VirtualDirectory Name="src">
-      <File Name="build/src/LICENSE.oracle"/>
-      <File Name="build/src/bcm2708-rpi-0-w.dtb"/>
-      <File Name="build/src/bcm2708-rpi-b.dtb"/>
-      <File Name="build/src/bcm2708-rpi-b-plus.dtb"/>
-      <File Name="build/src/bcm2708-rpi-cm.dtb"/>
-      <File Name="build/src/bcm2709-rpi-2-b.dtb"/>
-      <File Name="build/src/bcm2710-rpi-3-b.dtb"/>
-      <File Name="build/src/bcm2710-rpi-3-b-plus.dtb"/>
-      <File Name="build/src/bcm2710-rpi-cm3.dtb"/>
-      <File Name="build/src/bootcode.bin"/>
-      <File Name="build/src/config.txt"/>
-      <File Name="build/src/fixup.dat"/>
-      <File Name="build/src/fixup_cd.dat"/>
-      <File Name="build/src/fixup_db.dat"/>
-      <File Name="build/src/fixup_x.dat"/>
-      <File Name="build/src/start.elf"/>
-      <File Name="build/src/start_cd.elf"/>
-      <File Name="build/src/start_db.elf"/>
-      <File Name="build/src/start_x.elf"/>
-    </VirtualDirectory>
-    <File Name="build/qemu-rasp.sh"/>
-    <File Name="build/build.sh"/>
-    <File Name="build/Makefile"/>
-  </VirtualDirectory>
   <VirtualDirectory Name="license">
     <File Name="LICENSE"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="make">
+    <File Name="make/build.sh"/>
+    <File Name="make/iso.sh"/>
+    <File Name="make/Makefile"/>
+    <File Name="make/nanos.iso"/>
+    <File Name="make/qemu-rasp.sh"/>
+    <File Name="make/target.sh"/>
   </VirtualDirectory>
 </CodeLite_Project>

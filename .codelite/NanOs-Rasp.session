@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="/home/pi/OsDev/NanOs-Rasp/NanOs-Rasp.workspace">
-  <int Value="5" Name="m_selectedTab"/>
-  <wxString Value="/home/pi/OsDev/NanOs-Rasp/NanOs-Rasp.workspace" Name="m_workspaceName"/>
+<Session Name="/home/pi/src/NanOs-Rasp/NanOs-Rasp.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="/home/pi/src/NanOs-Rasp/NanOs-Rasp.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/arch/armv7-raspb3+/boot.S" Name="FileName"/>
+      <wxString Value="/home/pi/src/NanOs-Rasp/build/qemu-rasp.sh" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="19" Name="CurrentLine"/>
+      <int Value="9" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/arch/armv7-raspb3+/linker.ld" Name="FileName"/>
-      <int Value="16" Name="FirstVisibleLine"/>
-      <int Value="14" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/include/arch/armv7-raspb3+/baseIO.h" Name="FileName"/>
+      <wxString Value="/home/pi/src/NanOs-Rasp/build/build.sh" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/include/arch/armv7-raspb3+/gpfio.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="26" Name="CurrentLine"/>
+      <wxString Value="/home/pi/src/NanOs-Rasp/kernel/Makefile" Name="FileName"/>
+      <int Value="40" Name="FirstVisibleLine"/>
+      <int Value="58" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/include/arch/armv7-raspb3+/kuart.h" Name="FileName"/>
+      <wxString Value="/home/pi/src/NanOs-Rasp/kernel/arch/aarch64-elf/boot.S" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="31" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/pi/OsDev/NanOs-Rasp/kernel/arch/armv7-raspb3+/kuart.c" Name="FileName"/>
+      <wxString Value="/home/pi/src/NanOs-Rasp/kernel/arch/aarch64-elf/linker.ld" Name="FileName"/>
       <int Value="3" Name="FirstVisibleLine"/>
-      <int Value="28" Name="CurrentLine"/>
+      <int Value="39" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/pi/src/NanOs-Rasp/build/iso.sh" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="18" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

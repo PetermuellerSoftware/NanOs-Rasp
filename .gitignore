@@ -4,7 +4,7 @@
 # Prerequisites
 *.d
 
-build/
+*/build/
 isodir/
 
 # Compiled Object files

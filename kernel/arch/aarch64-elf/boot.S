@@ -1,0 +1,39 @@
+
+
+// Wir benötigen einen definierten Einsprungpunkt, der linker erzeugt unser Image so,
+// das diese Section direkt auf 0x08000 geladen wird
+
+
+.global _start
+.section ".text.boot"
+_start:
+    
+    // Andere Kerne werden vorerst abgeschaltet
+    mrs x5, mpidr_el1           // wir holen das multi processor affinity register
+    and x5, x5, #0x03           // reduzieren auf die bits 0 und 1
+    cbz x5,master
+
+halt:
+    wfe
+    b halt
+    
+    // Stack einrichten: dieser wächst nach unten und wird 
+    // erst dekrementiert, dann beschrieben, daher ist _start eine 
+    // sichere Adresse für unseren ersten Stack
+master:
+    ldr x5, =_start              // Adresse von Start zu r5
+    mov sp, x5                  
+    
+    // bss mit 0 initialisieren
+        
+    ldr     x1, =__bss_start
+    ldr     w2, =__bss_size
+3:  cbz     w2, 4f
+    str     xzr, [x1], #8
+    sub     w2, w2, #1
+    cbnz    w2, 3b
+    
+    // Kernel Init ist der erste Aufruf an eine C-Funktion
+4:  bl kernel_init
+
+    b       halt
