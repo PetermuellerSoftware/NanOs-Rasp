@@ -5,7 +5,7 @@
 #include <arch/mbox.h>
 #include <arch/baseIO.h>
 
-#define MBOX_LEN 8
+#define MBOX_LEN 36
 
 
 // Mailboxen
@@ -141,4 +141,8 @@ uint64_t mbox_get_Serial() {
     mbox_call(MBOX_CH_PROP, mbox);
 
     return mbox[6] << 32 + mbox[5];
+}
+
+void getAvailableScreenSizes() {
+    
 }

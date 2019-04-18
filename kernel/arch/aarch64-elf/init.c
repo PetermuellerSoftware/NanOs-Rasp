@@ -3,6 +3,8 @@
 #include <arch/kuart.h>
 #include <arch/mbox.h>
 #include <arch/delay.h>
+#include <arch/vga.h>
+
 
 void initialize_arch() {
     uart_init();
@@ -23,4 +25,6 @@ void initialize_arch() {
     printf("board serial is: 0x%x \n", mbox_get_Serial());
     wait_msec( 10 * 1000);
 
+    vga_init();
+    vga_test();
 }

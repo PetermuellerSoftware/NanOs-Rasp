@@ -109,6 +109,7 @@
       <File Name="arch/aarch64-elf/mbox.c"/>
       <File Name="arch/aarch64-elf/init.c"/>
       <File Name="arch/aarch64-elf/delay.c"/>
+      <File Name="arch/aarch64-elf/vga.c"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="make">
@@ -129,6 +130,7 @@
         <File Name="include/arch/aarch64-elf/kuart.h"/>
         <File Name="include/arch/aarch64-elf/mbox.h"/>
         <File Name="include/arch/aarch64-elf/delay.h"/>
+        <File Name="include/arch/aarch64-elf/vga.h"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <File Name="include/printf.h"/>
