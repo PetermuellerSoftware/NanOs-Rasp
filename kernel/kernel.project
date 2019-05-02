@@ -2,7 +2,67 @@
 <CodeLite_Project Name="kernel" Version="10.0.0" InternalType="">
   <Description/>
   <Dependencies/>
-  <Settings Type="Dynamic Library">
+  <VirtualDirectory Name="arch">
+    <File Name="arch/README"/>
+    <VirtualDirectory Name="armv7-raspb3+">
+      <File Name="arch/armv7-raspb3+/linker.ld"/>
+      <File Name="arch/armv7-raspb3+/boot.S"/>
+      <File Name="arch/armv7-raspb3+/gpfio.c"/>
+      <File Name="arch/armv7-raspb3+/Makefile.config"/>
+      <File Name="arch/armv7-raspb3+/kuart.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="aarch64-elf">
+      <File Name="arch/aarch64-elf/Makefile.config"/>
+      <File Name="arch/aarch64-elf/boot.S"/>
+      <File Name="arch/aarch64-elf/linker.ld"/>
+      <File Name="arch/aarch64-elf/gpfio.c"/>
+      <File Name="arch/aarch64-elf/kuart.c"/>
+      <File Name="arch/aarch64-elf/mbox.c"/>
+      <File Name="arch/aarch64-elf/init.c"/>
+      <File Name="arch/aarch64-elf/delay.c"/>
+      <File Name="arch/aarch64-elf/vga.c"/>
+      <File Name="arch/aarch64-elf/pmem.c"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="make">
+    <File Name="Makefile"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <VirtualDirectory Name="arch">
+      <VirtualDirectory Name="armv7-raspb3+">
+        <File Name="include/arch/armv7-raspb3+/baseIO.h"/>
+        <File Name="include/arch/armv7-raspb3+/auxiliaries.h"/>
+        <File Name="include/arch/armv7-raspb3+/gpfio.h"/>
+        <File Name="include/arch/armv7-raspb3+/kuart.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="aarch64-elf">
+        <File Name="include/arch/aarch64-elf/auxiliaries.h"/>
+        <File Name="include/arch/aarch64-elf/baseIO.h"/>
+        <File Name="include/arch/aarch64-elf/gpfio.h"/>
+        <File Name="include/arch/aarch64-elf/kuart.h"/>
+        <File Name="include/arch/aarch64-elf/mbox.h"/>
+        <File Name="include/arch/aarch64-elf/delay.h"/>
+        <File Name="include/arch/aarch64-elf/vga.h"/>
+        <File Name="include/arch/aarch64-elf/pmem.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <File Name="include/printf.h"/>
+    <File Name="include/libk.h"/>
+    <File Name="include/NanOs_logo.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="src">
+    <File Name="src/kernel.c"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="printf">
+    <File Name="printf/printf.c"/>
+    <File Name="printf/printf.h"/>
+    <File Name="printf/putchar.c"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="libk">
+    <File Name="libk/abort.c"/>
+    <File Name="libk/size2str.c"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
     <GlobalSettings>
       <Compiler Options="" C_Options="" Assembler="">
         <IncludePath Value="."/>
@@ -12,8 +72,8 @@
       </Linker>
       <ResourceCompiler Options=""/>
     </GlobalSettings>
-    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="no" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
         <IncludePath Value="."/>
       </Compiler>
       <Linker Options="" Required="yes"/>
@@ -91,60 +151,4 @@
       </Completion>
     </Configuration>
   </Settings>
-  <VirtualDirectory Name="arch">
-    <File Name="arch/README"/>
-    <VirtualDirectory Name="armv7-raspb3+">
-      <File Name="arch/armv7-raspb3+/linker.ld"/>
-      <File Name="arch/armv7-raspb3+/boot.S"/>
-      <File Name="arch/armv7-raspb3+/gpfio.c"/>
-      <File Name="arch/armv7-raspb3+/Makefile.config"/>
-      <File Name="arch/armv7-raspb3+/kuart.c"/>
-    </VirtualDirectory>
-    <VirtualDirectory Name="aarch64-elf">
-      <File Name="arch/aarch64-elf/Makefile.config"/>
-      <File Name="arch/aarch64-elf/boot.S"/>
-      <File Name="arch/aarch64-elf/linker.ld"/>
-      <File Name="arch/aarch64-elf/gpfio.c"/>
-      <File Name="arch/aarch64-elf/kuart.c"/>
-      <File Name="arch/aarch64-elf/mbox.c"/>
-      <File Name="arch/aarch64-elf/init.c"/>
-      <File Name="arch/aarch64-elf/delay.c"/>
-      <File Name="arch/aarch64-elf/vga.c"/>
-    </VirtualDirectory>
-  </VirtualDirectory>
-  <VirtualDirectory Name="make">
-    <File Name="Makefile"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="include">
-    <VirtualDirectory Name="arch">
-      <VirtualDirectory Name="armv7-raspb3+">
-        <File Name="include/arch/armv7-raspb3+/baseIO.h"/>
-        <File Name="include/arch/armv7-raspb3+/auxiliaries.h"/>
-        <File Name="include/arch/armv7-raspb3+/gpfio.h"/>
-        <File Name="include/arch/armv7-raspb3+/kuart.h"/>
-      </VirtualDirectory>
-      <VirtualDirectory Name="aarch64-elf">
-        <File Name="include/arch/aarch64-elf/auxiliaries.h"/>
-        <File Name="include/arch/aarch64-elf/baseIO.h"/>
-        <File Name="include/arch/aarch64-elf/gpfio.h"/>
-        <File Name="include/arch/aarch64-elf/kuart.h"/>
-        <File Name="include/arch/aarch64-elf/mbox.h"/>
-        <File Name="include/arch/aarch64-elf/delay.h"/>
-        <File Name="include/arch/aarch64-elf/vga.h"/>
-      </VirtualDirectory>
-    </VirtualDirectory>
-    <File Name="include/printf.h"/>
-    <File Name="include/libk.h"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="src">
-    <File Name="src/kernel.c"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="printf">
-    <File Name="printf/printf.c"/>
-    <File Name="printf/printf.h"/>
-    <File Name="printf/putchar.c"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="libk">
-    <File Name="libk/abort.c"/>
-  </VirtualDirectory>
 </CodeLite_Project>

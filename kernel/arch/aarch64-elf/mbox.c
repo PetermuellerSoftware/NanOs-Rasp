@@ -5,8 +5,6 @@
 #include <arch/mbox.h>
 #include <arch/baseIO.h>
 
-#define MBOX_LEN 36
-
 
 // Mailboxen
 enum {
@@ -26,7 +24,6 @@ enum {
 
 // Zustände Statusregister
 enum {
-    MBOX_REQUEST = 0,
     MBOX_FULL   = 0x80000000,
     MBOX_EMPTY  = 0x40000000,
     MBOX_RESPONSE = 0x80000000

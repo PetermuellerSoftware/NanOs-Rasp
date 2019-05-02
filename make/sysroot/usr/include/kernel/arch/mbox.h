@@ -15,6 +15,11 @@ enum  {
     MBOX_CH_PROP = 8,
 };
 
+enum {
+    MBOX_REQUEST = 0,
+
+};
+
 // Mailbox tags
 enum {
     MBOX_TAG_LAST = 0,
@@ -24,7 +29,15 @@ enum {
     MBOX_TAG_GETSERIAL = 0x10004
 };
 
+
+#define MBOX_LEN 36
+
+
 uint32_t mbox_get_boardmodel();
 uint32_t mbox_get_boardrevision();
 const uint8_t* mbox_get_boardmac();
 uint64_t mbox_get_Serial();
+
+extern volatile uint32_t mbox[ MBOX_LEN ];
+
+int mbox_call(unsigned char channel, volatile uint32_t* mbox);

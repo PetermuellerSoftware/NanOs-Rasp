@@ -4,7 +4,7 @@
 #include <arch/mbox.h>
 #include <arch/delay.h>
 #include <arch/vga.h>
-
+#include <arch/pmem.h>
 
 void initialize_arch() {
     uart_init();
@@ -25,6 +25,12 @@ void initialize_arch() {
     printf("board serial is: 0x%x \n", mbox_get_Serial());
     wait_msec( 10 * 1000);
 
-    vga_init();
-    vga_test();
+    pmem_init();
+
+    printf("initialising vga\n");
+    vga_init(mbox);
+    printf("testing vga\n");
+    lfb_showpicture();
+
+    
 }

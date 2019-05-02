@@ -10,7 +10,7 @@ INCLUDEDIR?=$(PREFIX)/include
 ARCHDIR=arch/$(ARCH)
 BUILDDIR?=build
 
-CFLAGS += -Og --sysroot=$(SYSROOT)
+CFLAGS += -O2 --sysroot=$(SYSROOT)
 CFLAGS += -I$$SYSROOT/usr/include
 CFLAGS += -I$$SYSROOT/usr/include/kernel
 
@@ -33,6 +33,7 @@ $(BUILDDIR)/src/kernel.o \
 $(BUILDDIR)/printf/printf.o \
 $(BUILDDIR)/printf/putchar.o \
 $(BUILDDIR)/libk/abort.o \
+$(BUILDDIR)/libk/size2str.o \
 $(KERNEL_ARCH_OBJS)
 
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="NanOs-Rasp" Database="" Version="10.0.0">
   <Project Name="kernel" Path="kernel/kernel.project" Active="Yes"/>
-  <Project Name="toolchain" Path="toolchain.project"/>
-  <Project Name="documentation" Path="documentation/documentation.project"/>
-  <Project Name="libc" Path="libc/libc.project"/>
+  <Project Name="toolchain" Path="toolchain.project" Active="No"/>
+  <Project Name="documentation" Path="documentation/documentation.project" Active="No"/>
+  <Project Name="libc" Path="libc/libc.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

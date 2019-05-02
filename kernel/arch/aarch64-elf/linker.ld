@@ -8,6 +8,7 @@ SECTIONS
         . = 0x80000;
         
         _text_start = .;
+        _kernel_start = .;
         _start = .;
         
         .text : 
@@ -38,5 +39,8 @@ SECTIONS
         }
         
         __bss_size = (__bss_end - __bss_start) >> 3;
+        
+        _kernel_end = .;
+        _kernel_size = (_kernel_end - _kernel_start);
 }
         
