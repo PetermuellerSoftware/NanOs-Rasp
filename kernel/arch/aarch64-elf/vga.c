@@ -67,7 +67,7 @@ void vga_init(uint32_t mbox[]) {
  */
 void lfb_showpicture()
 {
-    int x,y;
+    unsigned int x,y;
     unsigned char *ptr= (unsigned char*) vga_buffer;
     char *data=logo_data, pixel[4];
 

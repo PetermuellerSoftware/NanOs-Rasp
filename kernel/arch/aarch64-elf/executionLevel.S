@@ -56,13 +56,19 @@ gtEl1:
     beq     2f
         
     // Stack für EL1
-    msr     sp_el2, x1
+    msr     sp_el1, x1
     
     // Erlaube CNTP für EL1
     mrs     x0, cnthctl_el2
-    orr     x0,x0, #0x03
+    orr     x0,x0, #3
     msr     cnthctl_el2, x0         // set bit 0 and 1
     msr     cntvoff_el2, xzr        // counter virtual offset = 0
+    
+    // aktiviere SVE und FP
+    // ZEN, bits 16,17
+    mov x0, #(3 << 16)      // ZEN no trap
+    orr x0, x0, #(3 << 20)  // FPEN no trap
+    msr cpacr_el1, x0
     
     // Hypervisor configuration register
     mov     x0, #(1 << 31)      // Erlaube AArch64 auf EL0 und EL1
@@ -73,6 +79,10 @@ gtEl1:
     // stored process state register für Rücksprung
     mov     x2, #0x3c4
     msr     spsr_el2, x2
+    
+    // Exceptions in EL1
+    ldr     x3, =_vectors
+    msr     vbar_el1, x3
 
     // Adresse für "Rücksprung"
     adr     x2, 2f

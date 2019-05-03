@@ -68,5 +68,7 @@
     <File Name="make/nanos.iso"/>
     <File Name="make/qemu-rasp.sh"/>
     <File Name="make/target.sh"/>
+    <File Name="make/debug.sh"/>
+    <File Name="make/.gdbinit"/>
   </VirtualDirectory>
 </CodeLite_Project>

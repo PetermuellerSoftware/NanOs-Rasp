@@ -18,13 +18,16 @@ _start:
 _halt:
     wfe
     b _halt
-    
+        
+master:
+    // ändere den ExecutionLevel auf EL1
+    bl      gtEl1
+
     // Stack einrichten: dieser wächst nach unten und wird 
     // erst dekrementiert, dann beschrieben, daher ist _start eine 
     // sichere Adresse für unseren ersten Stack
-master:
-    ldr x5, =_start              // Adresse von Start zu r5
-    mov sp, x5                  
+    ldr x1, =_start              // Adresse von Start zu r5
+    mov sp, x1                  
     
     // bss mit 0 initialisieren
         

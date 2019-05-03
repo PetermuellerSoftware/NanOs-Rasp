@@ -10,13 +10,17 @@ INCLUDEDIR?=$(PREFIX)/include
 ARCHDIR=arch/$(ARCH)
 BUILDDIR?=build
 
-CFLAGS += -O2 --sysroot=$(SYSROOT)
+CFLAGS += -g -O2 --sysroot=$(SYSROOT) -pipe
 CFLAGS += -I$$SYSROOT/usr/include
 CFLAGS += -I$$SYSROOT/usr/include/kernel
+#Wanrings
+CFLAGS += -Wall -Wextra 
 
-#KCFLAGS += -fpic -ffreestanding -Wall -Wextra 
+KCFLAGS += -fpic -ffreestanding -Wall -Wextra 
 
-#ASMFLAGS += -fpic -ffreestanding -c
+ASMFLAGS += -Wall -Wextra 
+ASMFLAGS += -fpic -ffreestanding -c
+
 
 KCPPFLAGS += -D__is_kernel
 KCPPFLAGS += -D__log_uart

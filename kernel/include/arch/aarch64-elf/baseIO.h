@@ -6,7 +6,7 @@
 // Diese Funktionen werden derart oft genutzt, dass sie inline
 // also ohne weiteren overhead definiert werden.
 
-inline volatile uint64_t get64 (volatile int64_t port) 
+inline uint64_t get64 (volatile int64_t port) 
 {
     return *(volatile uint64_t *) port;
 }

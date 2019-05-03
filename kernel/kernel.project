@@ -22,6 +22,9 @@
       <File Name="arch/aarch64-elf/delay.c"/>
       <File Name="arch/aarch64-elf/vga.c"/>
       <File Name="arch/aarch64-elf/pmem.c"/>
+      <File Name="arch/aarch64-elf/exceptions.S"/>
+      <File Name="arch/aarch64-elf/executionLevel.S"/>
+      <File Name="arch/aarch64-elf/exc_handler.c"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="make">

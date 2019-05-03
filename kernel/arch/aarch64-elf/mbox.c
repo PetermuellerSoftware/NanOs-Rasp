@@ -137,7 +137,7 @@ uint64_t mbox_get_Serial() {
 
     mbox_call(MBOX_CH_PROP, mbox);
 
-    return mbox[6] << 32 + mbox[5];
+    return ( (uint64_t) mbox[6] << 32) + mbox[5];
 }
 
 void getAvailableScreenSizes() {

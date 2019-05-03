@@ -3,6 +3,8 @@
 // needs 11 zero bits on the left
 .p2align 11
 
+.global _vectors
+
 _vectors:
 
     // ++++++++++++++++++++++++++++

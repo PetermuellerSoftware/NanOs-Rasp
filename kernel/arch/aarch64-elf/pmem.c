@@ -45,7 +45,7 @@ void pmem_init_area(uint32_t fromChunk, uint32_t size, bool free) {
     const int startbit = PMEM_CHUNK_BIT(fromChunk);
     const int endbyte = PMEM_CHUNK_BYTE(toChunk);
     const int endbit = PMEM_CHUNK_BIT(toChunk);
-    const register uint8_t fullbyte = free ? 0xff : 0x0;
+    register const uint8_t fullbyte = free ? 0xff : 0x0;
     
 //    printf("pmem_init_area: von 0x%08x bis 0x%08x\n", fromChunk, toChunk);
 //    printf("pmem_init_area: von byte 0x%08x bit %d\n", startbyte, startbit);
@@ -151,7 +151,8 @@ void* pmem_alloc( int alloc_type) {
         case PMEM_ALLOC_DMA:
             abort();
         break;
-    }    
+    } 
+    return NULL;   
 } 
 
 void pmem_free (void* address) {
