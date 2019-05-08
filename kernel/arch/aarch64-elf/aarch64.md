@@ -1,0 +1,1 @@
+aarch64 nutzt ARMv8, speziell auf dem ARM-Cortex-A53 des Raspberry Pi 3B+.

@@ -55,9 +55,14 @@
       </Completion>
     </Configuration>
   </Settings>
+  <VirtualDirectory Name="documentation">
+    <File Name="index.rst"/>
+    <File Name="../README.md"/>
+  </VirtualDirectory>
   <VirtualDirectory Name="kernel">
-    <VirtualDirectory Name="arch">
-      <VirtualDirectory Name="armv7-raspb3+"/>
-    </VirtualDirectory>
+    <File Name="kernel/index.rst"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="doxygen">
+    <File Name="Doxyfile"/>
   </VirtualDirectory>
 </CodeLite_Project>

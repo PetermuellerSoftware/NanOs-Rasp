@@ -1,4 +1,8 @@
+/** @file aarch64-elf/executionLevel.S
+ * @brief Ändert den ExecutionLevel von 2/3 zu 1
+ */
 
+/// @cond DOXYGEN_IGNORE_ASM
 
 .global gtEl1
 
@@ -91,3 +95,5 @@ gtEl1:
     
     
 2:  ret
+
+/// @endcond

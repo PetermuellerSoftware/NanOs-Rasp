@@ -7,6 +7,9 @@
 */build/
 isodir/
 .codelite/
+documentation/latex
+documentation/html
+documentation/_build
 
 # Compiled Object files
 *.slo

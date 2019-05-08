@@ -1,6 +1,7 @@
 #include <arch/kuart.h>
 
 #include <arch/baseIO.h>
+#include <arch/delay.h>
 #include <stdint.h>
 #include <arch/gpfio.h>
 #include <arch/auxiliaries.h>
@@ -13,9 +14,9 @@ void uart_init() {
     
     //jegliches pull-up/down sicher entfernen
     put64(GPPUD,0);
-    delay(150);
+    wait_cycles(150);
     put64(GPPUDCLK0,(1<<14)|(1<<15));
-    delay(150);
+    wait_cycles(150);
     put64(GPPUDCLK0,0);
     
     // mini uart einschalten

@@ -25,6 +25,7 @@
       <File Name="arch/aarch64-elf/exceptions.S"/>
       <File Name="arch/aarch64-elf/executionLevel.S"/>
       <File Name="arch/aarch64-elf/exc_handler.c"/>
+      <File Name="arch/aarch64-elf/aarch64.md"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="make">
@@ -47,6 +48,7 @@
         <File Name="include/arch/aarch64-elf/delay.h"/>
         <File Name="include/arch/aarch64-elf/vga.h"/>
         <File Name="include/arch/aarch64-elf/pmem.h"/>
+        <File Name="include/arch/aarch64-elf/init.h"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <File Name="include/printf.h"/>
@@ -60,6 +62,7 @@
     <File Name="printf/printf.c"/>
     <File Name="printf/printf.h"/>
     <File Name="printf/putchar.c"/>
+    <File Name="printf/README.md"/>
   </VirtualDirectory>
   <VirtualDirectory Name="libk">
     <File Name="libk/abort.c"/>
@@ -154,4 +157,7 @@
       </Completion>
     </Configuration>
   </Settings>
+  <VirtualDirectory Name="kernel">
+    <File Name="kernel.md"/>
+  </VirtualDirectory>
 </CodeLite_Project>

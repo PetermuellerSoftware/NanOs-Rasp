@@ -1,7 +1,18 @@
+/** @file aarch64-elf/exc_handler.c
+ * @brief Allgemeiner Exception-Handler
+ */
 
 
 #include <arch/kuart.h>
 
+/**
+ * @brief Handler für alle Interrupts (Exceptions in ARM)
+ * @param type ExceptionType (0-15) nach Tabelle der Exceptions für aarch64
+ * @param esr 
+ * @param elr
+ * @param spsr
+ * @param far
+ */
 void exc_handler(unsigned long type, unsigned long esr, unsigned long elr, unsigned long spsr, unsigned long far)
 {
     // print out interruption type

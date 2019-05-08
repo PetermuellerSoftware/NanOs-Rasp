@@ -1,8 +1,20 @@
+/** 
+ *  @file aarch64-elf/boot.S
+ *
+ *  @brief Einsprungpunkt für den Systemstart
+ *
+ *  Führt folgende Operationen aus:
+ *  Alle Kerne außer Kern#0 werden durch eine Endlosschleife mit "wfe" deaktiviert.
+ *  Setzt den aktuellen ExecutionLevel auf 1 (eventuell vorher von EL3 auf EL2)
+ *  Initialisiert den Stack
+ *  Initialisiert den Bss mit 0
+ *  Ruft die C-Funktion kernel_init()
+ */
 
+/// @cond DOXYGEN_IGNORE_ASM
 
 // Wir benötigen einen definierten Einsprungpunkt, der linker erzeugt unser Image so,
 // das diese Section direkt auf 0x08000 geladen wird
-
 
 .global _start
 .global _halt
@@ -42,3 +54,5 @@ master:
 4:  bl kernel_init
 
     b       _halt
+
+///@endcond
